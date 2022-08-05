@@ -38,8 +38,76 @@
     height: 75px;
     padding-block: 18px;
     display: flex;
+    position: relative;
     align-items: end;
     justify-content: space-between;
+}
+
+.mega_box {
+    width: 232px;
+    background-color: #fff;
+    position: absolute;
+    top: 75px;
+    left: 169px;
+    height: 764px;
+    padding: 37px 0 0 34px;
+    box-shadow: 0 0 33px rgba(0, 0, 0, 0.32);
+    visibility: hidden;
+}
+
+.mega_heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 20px;
+    color: #F16D7F;
+}
+
+.mega_link {
+    display: block;
+    font-size: 14px;
+    Line-height: 28px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #646464;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.mega_link:hover {
+    color: #F16D7F;
+}
+
+.close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+    color: #6F6E6E;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
 }
 
 .top {

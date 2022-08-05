@@ -13,13 +13,43 @@
     <div class="header">
         <div class="container flex_header">
             <div class="left_block">
-                <a href=""><img src="image/logo.svg" alt="logo"></a>
-                <a href=""><img src="image/magnifier.svg" alt="magnifier"></a>
+                <a href="#">
+                    <img src="image/logo.svg" alt="logo">
+                </a>
+                <a href="#"><img src="image/magnifier.svg" alt="magnifier"></a>
             </div>
             <div class="right_block">
-                <a href=""><img src="image/menu.svg" alt="menu"></a>
-                <a class="img_inv" href=""><img src="image/registration.svg" alt="registration"></a>
-                <a class="img_inv" href=""><img src="image/cart.svg" alt="cart"></a>
+                <a onclick="ClickFunction()" href="#"><img src="image/menu.svg" alt="menu"></a>
+                <a class="img_inv" href="#"><img src="image/registration.svg" alt="registration"></a>
+                <a class="img_inv" href="#"><img src="image/cart.svg" alt="cart"></a>
+                <div id="mega_box" class="mega_box">
+                    <div onclick="CloseFunction()" class="close"></div>
+                    <h3>Menu</h3>
+                    <div class="item">
+                        <h3 class="mega_heading">MAN</h3>
+                        <a class="mega_link" href="#">Accessories</a>
+                        <a class="mega_link" href="#">Bags</a>
+                        <a class="mega_link" href="#">Denim</a>
+                        <a class="mega_link" href="#">T-Shirts</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="mega_heading">WOMAN</h3>
+                        <a class="mega_link" href="#">Accessories</a>
+                        <a class="mega_link" href="#">Jackets & Coats</a>
+                        <a class="mega_link" href="#">Polos</a>
+                        <a class="mega_link" href="#">T-Shirts</a>
+                        <a class="mega_link" href="#">Shirts</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="mega_heading">KIDS</h3>
+                        <a class="mega_link" href="#">Accessories</a>
+                        <a class="mega_link" href="#">Jackets & Coats</a>
+                        <a class="mega_link" href="#">Polos</a>
+                        <a class="mega_link" href="#">T-Shirts</a>
+                        <a class="mega_link" href="#">Shirts</a>
+                        <a class="mega_link" href="#">Bags</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -40,7 +70,7 @@
         <div class="container">
             <div class="offer">
                 <div class="offer_top">
-                    <a href="">
+                    <a href="#">
                         <div class="for_woman">
                             <img class="offer_img" src="image/forwomen.png" alt="for woman">
                             <p class="offer_p">
@@ -50,7 +80,7 @@
                         </div>
                     </a>
 
-                    <a href="">
+                    <a href="#">
                         <div class="for_men">
                             <img class="offer_img" src="image/formen.png" alt="for men">
                             <p class="offer_p">
@@ -60,7 +90,7 @@
                         </div>
                     </a>
 
-                    <a href="">
+                    <a href="#">
                         <div class="for_kids">
                             <img class="offer_img" src="image/forkids.png" alt="for kids">
                             <p class="offer_p">
@@ -70,7 +100,7 @@
                         </div>
                     </a>
                 </div>
-                <a href="">
+                <a href="#">
                     <div class="accesories">
                         <img class="offer_img" src="image/accesories.png" alt="accesories">
                         <p class="offer_p">
@@ -85,6 +115,7 @@
     <div class="feature"></div>
     <div class="subscribe"></div>
     <div class="footer"></div>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
