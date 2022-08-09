@@ -1,4 +1,4 @@
-function ClickFunction() {
+function OpenFunction() {
     document.getElementById("mega_box").style.visibility = "visible"
 }
 
