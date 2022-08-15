@@ -673,6 +673,7 @@ span {
   height: 777px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .main_photo {
@@ -772,4 +773,28 @@ span {
 
 .item-sec-product {
   margin-block: 130px;
+}
+
+.main_button1 {
+  width: 47px;
+  height: 47px;
+  border: none;
+  left: -183px;
+  bottom: 365px;
+  position: absolute;
+  background-color: rgba(42, 42, 42, 0.15);
+}
+
+.fa-angle-left {
+  font-size: 20px;
+}
+
+.main_button2 {
+  width: 47px;
+  height: 47px;
+  border: none;
+  right: -183px;
+  bottom: 365px;
+  position: absolute;
+  background-color: rgba(42, 42, 42, 0.15);
 }/*# sourceMappingURL=style.css.map */
