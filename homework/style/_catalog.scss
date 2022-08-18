@@ -1,0 +1,166 @@
+.catalog_filter {
+    display: flex;
+    margin-block: 51px 64px;
+}
+
+.filter_box > a {
+    display: flex;
+}
+
+.sort_box {
+    margin-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    width: 296px;
+}
+
+.sort_box > span {
+    cursor: pointer;
+}
+
+.img_filter,
+.fa-angle-down {
+    margin-left: 10px;
+}
+
+.filter_mega_item {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 11px 11px;
+}
+
+.filter_mega_box {
+    display: none;
+    width: 360px;
+    box-shadow: 0 0 33px rgba(0, 0, 0, 0.2);
+    padding: 13px 16px 16px 16px;
+}
+
+.filter_mega_item1 {
+    display: none;
+    flex-direction: column;
+    padding: 0px 0px 11px 11px;
+}
+
+.filter_mega_item2 {
+    display: none;
+    flex-direction: column;
+    padding: 24px 0px 11px 11px;
+}
+
+#box_function {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+#link_item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ef5b70;
+    display: block;
+}
+
+#link_item > img {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#box_function > img {
+    margin-left: 10px;
+}
+
+#item_function {
+    width: 327px;
+    height: 37px;
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 37px;
+    color: #6f6e6e;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.item_rec {
+    width: 5px;
+    height: 37px;
+    background-color: #ef5b70;
+    margin-right: 11px;
+}
+
+.filter_mega_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6f6e6e;
+}
+
+.filter_mega_link:hover {
+    color: #ef5b70;
+}
+
+#item_function:hover {
+    color: #ef5b70;
+    background-color: rgb(248, 248, 248);
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "\25B6";
+    padding-right: 0.5em;
+}
+
+details[open] > summary::after {
+    content: "\25BC";
+}
+
+.pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 283px;
+    height: 43px;
+    border: 1px solid #ebebeb;
+    line-height: 43px;
+    letter-spacing: 11px;
+    color: #c4c4c4;
+}
+
+.pagination:hover {
+    border: 1px solid #d0d0d0;
+}
+
+.nav_pagination > .container {
+    display: flex;
+    justify-content: center;
+}
+
+.li_pagination > a {
+    font-weight: 300;
+    font-size: 16px;
+    color: #c4c4c4;
+}
+
+.li_pagination > a:hover {
+    color: #ef5b70;
+}
+
+.link_pag {
+    letter-spacing: 5px;
+}
+
+#card_box_second {
+    display: none;
+}
