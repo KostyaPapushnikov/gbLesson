@@ -4,6 +4,7 @@ function OpenFunction() {
 
 function CloseFunction() {
     document.getElementById("mega_box").style.visibility = "hidden"
+    document.getElementById("list_item").style.display = "none"
 }
 
 function BoxFunction() {
@@ -42,4 +43,13 @@ function firstPageFunction() {
 function secondPageFunction() {
     document.getElementById("card_box_second").style.display = "flex"
     document.getElementById("card_box_first").style.display = "none"
+}
+
+function clearFunction() {
+    document.getElementById("list_item").style.display = "none"
+    document.getElementById("list_item_bottom").style.display = "none"
+}
+
+function CloseFunctionBottom() {
+    document.getElementById("list_item_bottom").style.display = "none"
 }

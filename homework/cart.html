@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Cart</title>
     <script src="https://kit.fontawesome.com/3da9dc90d8.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
@@ -25,7 +23,7 @@
             <div class="right_block">
                 <a onclick="OpenFunction()" href="#"><img src="image/menu.svg" alt="menu"></a>
                 <a class="img_inv" href="#"><img src="image/registration.svg" alt="registration"></a>
-                <a class="img_inv" href="cart.html"><img src="image/cart.svg" alt="cart"></a>
+                <a class="img_inv" href="#"><img src="image/cart.svg" alt="cart"></a>
                 <div id="mega_box" class="mega_box">
                     <div onclick="CloseFunction()" class="close"></div>
                     <h3>Menu</h3>
@@ -57,123 +55,102 @@
             </div>
         </div>
     </header>
-    <div class="breadcrumb">
-        <div class="container">
-            <h1>NEW ARRIVALS</h1>
-            <nav class="crumb">
-                <a class="crumb_home" href="index.html">HOME</a>
-                <span>/</span>
-                <a class="crumb_men" href="#">MEN</a>
-                <span>/</span>
-                <a class="crumb_arrivals" href="#">ARRIVALS</a>
-            </nav>
+    <div class="breadcrumb breadcrumb_cart">
+        <div class="container container_catalog">
+            <h1>SHOPPING CART</h1>
         </div>
     </div>
-    <main class="main_content">
+    <section class="cart">
         <div class="container">
-            <button class="main_button1">
-                <i class="fa fa-light fa-angle-left"></i>
-            </button>
-            <button class="main_button2">
-                <i class="fa fa-light fa-angle-right"></i>
-            </button>
+            <div class="cart_list">
+                <div id="list_item" class="list_item">
+                    <img src="image/cardman2.png" alt="cardman2">
+                    <div class="item_desc">
+                        <h3>MANGO PEOPLE <br> T-SHIRT</h3>
+                        <p>Price: <span class="usd-span">$300</span></p>
+                        <div class="select">
+                            <p>Color:</p>
+                            <select id="color">
+                                <option value="red">red</option>
+                                <option value="green">green</option>
+                                <option value="blue">blue</option>
+                                <option value="white">white</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <p>Size:</p>
+                            <select id="size">
+                                <option value="xs">XL</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <p>Quantity:
+                                <input id="number" type="text" value="1" max="100">
+                            </p>
+                        </div>
+                        <a onclick="CloseFunction()" href="#">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="list_item_bottom" class="list_item list_item_bottom">
+                    <img src="image/negr.png" alt="negr">
+                    <div class="item_desc">
+                        <h3>MANGO PEOPLE <br> T-SHIRT</h3>
+                        <p>Price: <span class="usd-span">$300</span></p>
+                        <div class="select">
+                            <p>Color:</p>
+                            <select id="color">
+                                <option value="red">red</option>
+                                <option value="green">green</option>
+                                <option value="blue">blue</option>
+                                <option value="white">white</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <p>Size:</p>
+                            <select id="size">
+                                <option value="xs">XL</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <p>Quantity:
+                                <input id="number" type="text" value="1" max="100">
+                            </p>
+                        </div>
+                        <a onclick="CloseFunctionBottom()" href="#">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
 
-            <img class="main_photo" src="image/mainphoto.png" alt="mainphoto">
-        </div>
-    </main>
-    <section class="section_content">
-        <div class="container section_container">
-            <div class="section_topinfo">
-                <h3>WOMEN COLLECTION</h3>
-                <div class="hor_rec"></div>
-                <h2>MOSCHINO CHEAP AND CHIC</h2>
-                <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively
-                    syndicate
-                    collaborative architectures before cutting-edge services. Completely visualize parallel core
-                    competencies rather than exceptional portals. </p>
-                <span>$561</span>
+                    </div>
+                </div>
+                <div class="a_cart_button">
+                    <a onclick="clearFunction()" href="#">CLEAR SHOPPING CART</a>
+                    <a href="catalog.html">CONTINUE SHOPPING</a>
+                </div>
             </div>
-            <div class="section_bottominfo">
-                <div class="bottominfo">
-                    <p>
-                        CHOOSE COLOR <i class="fa-solid fa-angle-down"></i>
-                    </p>
-                    <p>
-                        CHOOSE SIZE <i class="fa-solid fa-angle-down"></i>
-                    </p>
-                    <p>
-                        QUANTITY <i class="fa-solid fa-angle-down"></i>
-                    </p>
-                </div>
-
-
-                <a href="#">
-                    <button class="bottombutton">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Add to Cart
-                    </button>
-                </a>
-
-            </div>
-        </div>
-    </section>
-    <section class="item-sec item-sec-product">
-        <div class="container">
-            <div class="card-box">
-
-                <div class="item">
-                    <a class="item-link" href="product.html">
-                        <img class="item-pic" src="image/cardman3.png" alt="cardman3">
-                        <div class="text-box">
-                            <p class="item-desc">ELLERY X M'O CAPSULE</p>
-                            <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="item-price"> $52.00</p>
-                        </div>
-                    </a>
-                    <div class="add-box">
-                        <a class="add" href="1">
-                            <img class="add-pic" src="image/shop.svg" alt="shop">
-                            <p class="add-desc">Add to Cart</p>
-                        </a>
+            <div class="purchase">
+                <form class="purchase_form" action="#">
+                    <h2>SHIPPING ADRESS</h2>
+                    <input placeholder="Bangladesh" type="text"> <br>
+                    <input placeholder="State" type="text"> <br>
+                    <input placeholder="Postcode / Zip" type="text"> <br>
+                    <button>GET A QUOTE</button>
+                </form>
+                <div class="checkout">
+                    <div class="checkout_sum">
+                        <p>SUB TOTAL $900</p>
+                        <h3>GRAND TOTAL <span class="sum_usd">$900</span></h3>
                     </div>
-                </div>
-                <div class="item">
-                    <a class="item-link" href="product.html">
-                        <img class="item-pic" src="image/cardman2.png" alt="cardman2">
-                        <div class="text-box">
-                            <p class="item-desc">ELLERY X M'O CAPSULE</p>
-                            <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="item-price"> $52.00</p>
-                        </div>
-                    </a>
-                    <div class="add-box">
-                        <a class="add" href="1">
-                            <img class="add-pic" src="image/shop.svg" alt="shop">
-                            <p class="add-desc">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="item-link" href="product.html">
-                        <img class="item-pic" src="image/cardwoman3.png" alt="cardwoman3">
-                        <div class="text-box">
-                            <p class="item-desc">ELLERY X M'O CAPSULE</p>
-                            <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="item-price"> $52.00</p>
-                        </div>
-                    </a>
-                    <div class="add-box">
-                        <a class="add" href="1">
-                            <img class="add-pic" src="image/shop.svg" alt="shop">
-                            <p class="add-desc">Add to Cart</p>
-                        </a>
-                    </div>
+                    <a class="checkout_proceed" href="#">PROCEED TO CHECKOUT</a>
                 </div>
             </div>
         </div>
