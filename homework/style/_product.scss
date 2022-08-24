@@ -120,26 +120,27 @@ span {
 }
 
 .bottombutton {
-    padding: 14px 56px 14px 23px;
+    width: 211px;
+    height: 47px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #f26376;
-    background-color: transparent;
+    background: transparent;
     border: 1px solid #f26376;
-    margin-top: 48px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .bottombutton:hover {
-    background-color: #fff;
-    color: #f26376;
+    background-color: #f26376;
+    color: #fff;
 }
 
 .fa-cart-shopping {
     margin-right: 23px;
-    color: #ef5b70;
-    font-size: 24px;
-    padding-bottom: 8px;
+    font-size: 21px;
 }
 
 .item-sec-product {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Registration</title>
     <script src="https://kit.fontawesome.com/3da9dc90d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -55,106 +55,45 @@
             </div>
         </div>
     </header>
-    <div class="breadcrumb breadcrumb_cart">
+    <div class="breadcrumb breadcrumb_regist">
         <div class="container container_catalog">
-            <h1>SHOPPING CART</h1>
+            <h1>REGISTRATION</h1>
         </div>
     </div>
-    <section class="cart">
-        <div class="container">
-            <div class="cart_list">
-                <div id="list_item" class="list_item">
-                    <img src="image/cardman2.png" alt="cardman2">
-                    <div class="item_desc">
-                        <h3>MANGO PEOPLE <br> T-SHIRT</h3>
-                        <p>Price: <span class="usd-span">$300</span></p>
-                        <div class="select">
-                            <p>Color:</p>
-                            <select id="color">
-                                <option value="red">red</option>
-                                <option value="green">green</option>
-                                <option value="blue">blue</option>
-                                <option value="white">white</option>
-                            </select>
-                        </div>
-                        <div class="select">
-                            <p>Size:</p>
-                            <select id="size">
-                                <option value="xs">XL</option>
-                                <option value="s">S</option>
-                                <option value="m">M</option>
-                                <option value="l">L</option>
-                                <option value="xl">XL</option>
-                            </select>
-                        </div>
-                        <div class="quantity">
-                            <p>Quantity:
-                                <input id="number" type="text">
-                            </p>
-                        </div>
-                        <a onclick="CloseFunction()" href="#">
-                            <i class="fa-solid fa-xmark"></i>
-                        </a>
-                    </div>
+    <main class="regist">
+        <div class="container container_regist">
+            <form class="regist_form" action="#">
+                <h3>Your Name</h3>
+                <input class="form_input" placeholder="First name" type="text"> <br>
+                <input class="form_input" placeholder="Last Name" type="text"> <br>
+                <div class="radio">
+                    <input class="form_radio" value="Male" type="radio" checked> <span class="span_check">Male</span>
+                    <input class="form_radio_right" value="Female" type="radio"> <span class="span_check">Female</span>
                 </div>
-                <div id="list_item_bottom" class="list_item list_item_bottom">
-                    <img src="image/negr.png" alt="negr">
-                    <div class="item_desc">
-                        <h3>MANGO PEOPLE <br> T-SHIRT</h3>
-                        <p>Price: <span class="usd-span">$300</span></p>
-                        <div class="select">
-                            <p>Color:</p>
-                            <select id="color">
-                                <option value="red">red</option>
-                                <option value="green">green</option>
-                                <option value="blue">blue</option>
-                                <option value="white">white</option>
-                            </select>
-                        </div>
-                        <div class="select">
-                            <p>Size:</p>
-                            <select id="size">
-                                <option value="xs">XL</option>
-                                <option value="s">S</option>
-                                <option value="m">M</option>
-                                <option value="l">L</option>
-                                <option value="xl">XL</option>
-                            </select>
-                        </div>
-                        <div class="quantity">
-                            <p>Quantity:
-                                <input id="number" type="text" value="1" max="100">
-                            </p>
-                        </div>
-                        <a onclick="CloseFunctionBottom()" href="#">
-                            <i class="fa-solid fa-xmark"></i>
-                        </a>
-
-                    </div>
-                </div>
-                <div class="a_cart_button">
-                    <a onclick="clearFunction()" href="#">CLEAR SHOPPING CART</a>
-                    <a href="catalog.html">CONTINUE SHOPPING</a>
-                </div>
-            </div>
-            <div class="purchase">
-                <form class="purchase_form" action="#">
-                    <h2>SHIPPING ADRESS</h2>
-                    <input placeholder="Bangladesh" type="text"> <br>
-                    <input placeholder="State" type="text"> <br>
-                    <input placeholder="Postcode / Zip" type="text"> <br>
-                    <button>GET A QUOTE</button>
-                </form>
-                <div class="checkout">
-                    <div class="checkout_sum">
-                        <p>SUB TOTAL $900</p>
-                        <h3>GRAND TOTAL <span class="sum_usd">$900</span></h3>
-                    </div>
-                    <a class="checkout_proceed" href="#">PROCEED TO CHECKOUT</a>
-                </div>
-            </div>
+                <h3>Login details</h3>
+                <input class="form_input" placeholder="Email" type="email"> <br>
+                <input class="form_input" placeholder="Password" type="password">
+                <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    letters</p>
+                <button>
+                    JOIN NOW
+                    <i class="fa fa-light fa-arrow-right-long"></i>
+                </button>
+            </form>
+            <section class="perks">
+                <h2>LOYALTY HAS ITS PERKS</h2>
+                <h3>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                    these as soon as you join:</h3>
+                <ul class="perks_ul">
+                    <li><i class="fa-regular fa-check"></i>15% off welcome offer</li>
+                    <li><i class="fa-regular fa-check"></i>Free shipping, returns and exchanges on all orders</li>
+                    <li><i class="fa-regular fa-check"></i>$10 off a purchase on your birthday</li>
+                    <li><i class="fa-regular fa-check"></i>Early access to products</li>
+                    <li><i class="fa-regular fa-check"></i>Exclusive offers & rewards</li>
+                </ul>
+            </section>
         </div>
-    </section>
+    </main>
     <footer class="footer">
         <section class="subscribe">
             <img src="image/photosubscribe.png" alt="photosubscribe">

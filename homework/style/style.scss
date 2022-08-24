@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    list-style-type: none;
     font-family: "Lato", sans-serif;
 }
 
@@ -410,6 +411,11 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    transition: 1s;
+}
+
+.delivery_info:hover {
+    transform: translate(0, -20px);
 }
 
 figure > p {
@@ -658,3 +664,5 @@ form > p {
 @import "catalog";
 /*Cart page*/
 @import "cart";
+/*Registration page*/
+@import "registration";
