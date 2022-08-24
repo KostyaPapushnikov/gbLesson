@@ -584,6 +584,15 @@ form > p {
         width: 735px;
         height: 116px;
     }
+
+    .delivery {
+        height: 610px;
+    }
+    .delivery_text {
+        height: 610px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 375px) {
