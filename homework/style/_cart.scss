@@ -87,7 +87,7 @@
     padding: 16px 40px;
     background: transparent;
     border: 1px solid #a4a4a4;
-    @include txt(300, 17px, 14, #000);
+    @include txt(300, 17px, 14px, #000);
     text-decoration: none;
     transition-duration: 0.3s;
 }

@@ -1,0 +1,94 @@
+@mixin txt($fw, $lh, $fs, $cr) {
+    font-weight: $fw;
+    line-height: $lh;
+    font-size: $fs;
+    color: $cr;
+}
+
+.regist {
+    margin-bottom: 96px;
+}
+
+.regist_form {
+    width: 360px;
+    height: auto;
+}
+
+.container_regist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perks {
+    width: 652px;
+}
+
+.perks > h2,
+.perks > h3,
+.perks > ul {
+    @include txt(300, 29px, 24px, #000000);
+}
+
+.perks > h3 {
+    margin-block: 22px;
+}
+
+.perks_ul > li {
+    line-height: 35px;
+}
+
+.fa-check {
+    margin-right: 23px;
+}
+
+.regist_form > h3 {
+    @include txt(300, 19px, 16px, #222222);
+    margin-bottom: 20px;
+}
+
+.radio {
+    margin-block: 34px;
+}
+
+.form_radio_right {
+    margin-left: 20px;
+}
+
+.form_input {
+    width: 100%;
+    height: 45px;
+    padding-left: 17px;
+    margin-bottom: 20px;
+    border: 1px solid #a4a4a4;
+}
+
+.span_check {
+    @include txt(300, 13px, 11px, #000000);
+}
+
+.regist_form > p {
+    @include txt(300, 16px, 13px, #b1b1b1);
+}
+
+.regist_form > button {
+    width: 167px;
+    height: 50px;
+    background-color: #f16d7f;
+    border: 1px solid #f16d7f;
+    @include txt(400, 17px, 14px, #ffffff);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.regist_form > button:hover {
+    background: transparent;
+    color: #f16d7f;
+}
+
+.fa-arrow-right-long {
+    margin-left: 20px;
+}
+
+.breadcrumb_regist {
+    margin-bottom: 64px;
+}
