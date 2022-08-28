@@ -429,6 +429,7 @@ figure > p {
 
 .subscribe > img {
   width: 100%;
+  min-width: 1140px;
   height: 448px;
   position: absolute;
 }
@@ -1282,4 +1283,53 @@ details[open] > summary::after {
 
 .breadcrumb_regist {
   margin-bottom: 64px;
+  min-width: 1140px;
+}
+
+.footer {
+  min-width: 1140px;
+}
+
+.subscribe {
+  min-width: 1140px;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb_regist {
+    min-width: 768px;
+  }
+  .subscribe > img {
+    min-width: 768px;
+  }
+  .footer {
+    min-width: 768px;
+  }
+  .subscribe > .container {
+    margin: 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  .breadcrumb_regist {
+    min-width: 375px;
+  }
+  .subscribe > img {
+    min-width: 375px;
+  }
+  .footer {
+    min-width: 375px;
+  }
+  .breadcrumb > .container {
+    justify-content: center;
+  }
+  .container_regist {
+    flex-direction: column;
+  }
+  .perks {
+    width: auto;
+    margin-top: 40px;
+  }
+  .copyright > .container {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
