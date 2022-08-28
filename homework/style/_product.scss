@@ -38,6 +38,7 @@ span {
 
 .main_content {
     background-color: #f7f7f7;
+    min-width: 1140px;
 }
 
 .main_content > .container {
@@ -169,4 +170,43 @@ span {
     bottom: 365px;
     position: absolute;
     background-color: rgba(42, 42, 42, 0.15);
+}
+
+@media (max-width: 768px) {
+    .main_content {
+        min-width: 768px;
+    }
+}
+
+@media (max-width: 375px) {
+    .main_content {
+        min-width: 375px;
+    }
+
+    .main_photo {
+        width: 100%;
+    }
+
+    .main_button1,
+    .main_button2 {
+        display: none;
+    }
+    .breadcrumb > .container {
+        line-height: 40px;
+    }
+
+    .main_content > .container {
+        height: 470px;
+    }
+
+    .container_product {
+        flex-direction: column;
+        height: 148px;
+        align-items: center;
+    }
+
+    .section_bottominfo,
+    .section_topinfo {
+        width: auto;
+    }
 }

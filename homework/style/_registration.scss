@@ -119,6 +119,7 @@
     .subscribe > .container {
         margin: 0;
         flex-direction: column;
+        justify-content: space-around;
     }
 }
 
