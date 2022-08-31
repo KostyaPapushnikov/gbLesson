@@ -428,6 +428,7 @@ figure > p {
 
 .subscribe > img {
     width: 100%;
+    min-width: 1140px;
     height: 448px;
     position: absolute;
 }
@@ -665,6 +666,10 @@ form > p {
         width: auto;
         height: 111px;
     }
+}
+
+.breadcrumb {
+    min-width: 1140px;
 }
 
 /*Product page*/
